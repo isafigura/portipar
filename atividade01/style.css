@@ -1,0 +1,19 @@
+*{
+    color: white;
+    background-color: red;
+}
+
+.calcular{
+    margin-top: 20px;
+}
+
+.calcular > button {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#resultado{
+    background-color: aliceblue;
+    color: black;
+}

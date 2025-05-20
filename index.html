@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 2</title>
+    <title>Document</title>
 
-    <link rel="stylesheet" href="styles/style.css" />
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <main>
+    <main style="display: flex; height: 95vh;">
+    <div>
 
-        <div class="acesso">
-            <h1 class="titulo">#portipar</h1>
-            <div class="acesso">
-                <input type="text" id="nome" placeholder="SEU NOME">
-                <input type="text" id="ra" placeholder="SEU RA">
-                <button>Acessar</button>
-            </div>
-
+        <div class="card" onclick="mudar('atividade01/atividade01.html')" >
+            <h3>Atividade 1</h3>
         </div>
+
+         <div class="card" onclick="mudar('atividade02/atividade02.html')" >
+            <h3>Atividade 2</h3>
+        </div>
+
+    </div>
+
+    <iframe id="tela" src="semAtividae/atividade01.html"  width="100%" height="100%"></iframe>
     </main>
 
-
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts.js"> </script>
 </body>
-
 </html>

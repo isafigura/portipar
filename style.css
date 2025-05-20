@@ -1,0 +1,17 @@
+.card{
+    background-color: #bdecec;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px;
+    border: 1px solid #3f8b8b;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+iframe{
+    border: 1px solid #666;
+}
