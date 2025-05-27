@@ -9,6 +9,8 @@ function converter() {
     if (fahr !== '' && !isNaN(fahr)) {
         document.getElementById('celsius').value = (fahr - 32) * 5 / 9;
     }
+
+
 }
 
 function limpar() {

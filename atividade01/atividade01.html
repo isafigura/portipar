@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div >
+    <div>
         <h1>ATIVIDADE 1 - IMC</h1>
-        <p>Digite seu peso, em kg:</p>
-        <input id="peso" type="number">
-        <p>Digite sua altura, em metros:</p>
-        <input id="altura" type="number">
+    </div>
+    <div>
+        <p>O IMC (Índice de Massa Corporal) é uma medida usada para avaliar se o peso de uma pessoa está adequado em relação à sua altura.<br>
+             O cálculo é feito dividindo o peso (em kg) pela altura ao quadrado (em metros): IMC = peso / (altura × altura)<br>
+            Os valores ajudam a classificar a pessoa em categorias como abaixo do peso, peso normal, sobrepeso ou obesidade.<br> 
+            É uma ferramenta simples usada como referência geral para a saúde.
+
+</p>
+    </div>
+    <div >
+        <p>Digite seu peso (kg):</p>
+        <input id="peso" type="number" placeholder="65">
+        <p>Digite sua altura (m):</p>
+        <input id="altura" type="number" placeholder="1.75">
     </div>
     <div class="calcular">
         <button onclick="calcularIMC()">Calcular IMC</button>

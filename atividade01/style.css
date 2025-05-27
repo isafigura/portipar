@@ -1,6 +1,6 @@
 *{
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: beige;
 }
 
 .calcular{
@@ -8,9 +8,10 @@
 }
 
 .calcular > button {
-    background-color: blue;
+    background-color: #003F72;
     padding: 10px;
     border-radius: 10px;
+    color: white;
 }
 
 #resultado{
