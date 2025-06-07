@@ -1,27 +1,44 @@
-function calcularNotas() {
-    const valorInput = document.getElementById('valor');
-    const resultadoDiv = document.getElementById('resultado');
-    let valor = parseInt(valorInput.value);
+let timer;          
+let seconds = 0;     
+let isRunning = false; 
 
-    if (isNaN(valor) || valor < 2) {
-        resultadoDiv.innerHTML = "<p>Digite um valor válido (mínimo R$2).</p>";
-        return;
-    }
 
-    const notas = [100, 50, 20, 10, 5, 2];
-    let resultado = '';
+const timerDisplay = document.getElementById('timer');
+const startBtn = document.getElementById('startBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const resetBtn = document.getElementById('resetBtn');
 
-    notas.forEach(nota => {
-        let qtd = Math.floor(valor / nota);
-        if (qtd > 0) {
-            resultado += `<p>${qtd} nota(s) de R$${nota}</p>`;
-            valor %= nota;
-        }
-    });
-
-    if (valor > 0) {
-        resultado += "<p><strong>Não é possível sacar moedas. Valor restante: R$" + valor + "</strong></p>";
-    }
-
-    resultadoDiv.innerHTML = resultado;
+function updateDisplay() {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  timerDisplay.textContent = 
+    `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
 }
+
+function startTimer() {
+  if (!isRunning) {
+    isRunning = true;
+    timer = setInterval(() => {
+      seconds++;
+      updateDisplay();
+    }, 1000);
+  }
+}
+
+function pauseTimer() {
+  isRunning = false;
+  clearInterval(timer);
+}
+
+function resetTimer() {
+  pauseTimer();
+  seconds = 0;
+  updateDisplay();
+}
+
+startBtn.addEventListener('click', startTimer);
+pauseBtn.addEventListener('click', pauseTimer);
+resetBtn.addEventListener('click', resetTimer);
+
+updateDisplay();
+
