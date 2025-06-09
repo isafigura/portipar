@@ -1,19 +1,33 @@
-let lista = []
-
 function adicionar() {
-    let tarefa = document.getElementById('tarefa').value;
-    
-    lista.push(tarefa);
-    
+  const input = document.getElementById('tarefa');
+  const texto = input.value.trim();
 
-    if (tarefa !== '') {
-        document.getElementById('lista').innerHTML += tarefa + '<button onclick="concluir(tarefa)">Concluída</button>' + '<button onclick="remover()">Remover</button>'+ '<br>';
-        
-    }
-    
-}
+  if (texto === '') return;
 
-function concluir(tarefa) {
-    document.getElementById('tarefa').classList.remove('naoConcluida');
-    document.getElementById('tarefa').classList.add('concluida');
+  const li = document.createElement('li');
+  li.className = 'naoConcluida';
+
+  const span = document.createElement('span');
+  span.textContent = texto;
+
+  const botaoConcluir = document.createElement('button');
+  botaoConcluir.textContent = 'Concluída';
+  botaoConcluir.onclick = () => {
+    span.classList.toggle('concluida');
+  };
+
+  const botaoRemover = document.createElement('button');
+  botaoRemover.textContent = 'Remover';
+  botaoRemover.onclick = () => {
+    li.remove();
+  };
+
+  // Adiciona elementos
+  li.appendChild(span);
+  li.appendChild(botaoConcluir);
+  li.appendChild(botaoRemover);
+
+  document.getElementById('lista').appendChild(li);
+
+  input.value = '';
 }
