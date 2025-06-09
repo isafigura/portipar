@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ebe5e5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+}
+
+#timer {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #0c0c0c;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+#startBtn { background-color: #338b36; color: white; }
+#pauseBtn { background-color: #e79f3a; color: white; }
+#resetBtn { background-color: #cf3b36; color: white; }
+
+button:hover {
+  opacity: 0.9;
+}
+
