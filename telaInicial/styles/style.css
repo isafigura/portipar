@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("../assets/images.jpg");
+    background-image: url("../assets/fundoPredios.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,4 +29,23 @@ main{
 
 .titulo{
     color: red;
+}
+
+.acesso > img {
+    width: 150px;
+}
+
+.botaoAcessar {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    
+}
+
+.botaoAcessar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); 
 }
