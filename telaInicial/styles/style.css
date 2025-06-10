@@ -28,7 +28,7 @@ main{
 }
 
 .titulo{
-    color: red;
+    color: #C8102E;
 }
 
 .acesso > img {
@@ -36,12 +36,12 @@ main{
 }
 
 .botaoAcessar {
-    background-color: red;
+    background-color: #C8102E;
     color: rgb(255, 255, 255);
     border-radius: 20px;
     border: none;
     height: 40px;
-    width: 80px;
+    width: 200px;
     
 }
 
