@@ -1,0 +1,70 @@
+ * {
+     font-family: "Coral Pixels", serif;
+     font-weight: 400;
+     font-style: normal;
+     margin: 0;
+     text-align: center;
+ }
+
+ body {
+     background-color: aquamarine;
+
+ }
+
+ h2 {
+     font-size: 100px;
+     color: rgb(41, 41, 110);
+ }
+
+ main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+
+ }
+
+ section {
+     width: 700px;
+     background-color: white;
+     box-shadow: 2px 5px 6px 2px #666;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+ }
+
+ p {
+     font-size: 20px;
+ }
+
+ img {
+     height: 120px;
+     width: 120px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 20px;
+ }
+
+
+
+ .resultado {
+     font-size: 50px;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 15px;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .carta {
+     height: 120px;
+     width: 120px;
+     cursor: pointer;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+ }
