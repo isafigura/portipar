@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jogo da Adivinhação</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <h1>Jogo da Adivinhação</h1>
+  <p>Este código implementa um jogo de adivinhação simples, onde o objetivo do jogador é descobrir um número secreto
+    entre 1 e 100.
+    Logo no início, um número aleatório é gerado com a função Math.random(), ajustado para estar no intervalo de 1 a 100
+    usando Math.floor() + 1.
+    Também é criada uma variável chamada tentativas, que armazena quantas vezes o jogador já tentou adivinhar o número.
+    A lógica principal está na função verificarPalpite(), que é chamada sempre que o jogador envia um palpite. Essa
+    função coleta o valor inserido no campo de entrada, converte para número e verifica se está dentro do intervalo
+    permitido. Caso não esteja, uma mensagem é exibida e compara se é maior ou menor que o número secreto.
+    Se o palpite for válido, a contagem de tentativas é incrementada. Em seguida, o código compara o valor do palpite
+    com o número secreto. <br>
+    Data: 23/05.
+  </p>
   <div>
-  <p>Digite um número entre 1 e 100:</p>
-  <input type="number" id="palpite" min="1" max="100" />
-  <button onclick="verificarPalpite()">Adivinhar</button>
+    <p>Digite um número entre 1 e 100:</p>
+    <input type="number" id="palpite" min="1" max="100" />
+    <button onclick="verificarPalpite()">Adivinhar</button>
   </div>
   <div id="mensagem"></div>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>

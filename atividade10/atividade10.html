@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <h1>Sorteador de Nomes</h1>
+    <p class="explicacao">Este código define uma função sortearNome(), que realiza o sorteio a partir dos nomes inseridos no input.
+      Ao ser chamada, a função recupera o valor digitado no campo com o ID "entradaNomes". Em seguida, essa
+      string é dividida em uma lista de nomes usando o método .split(","), e cada nome é "limpo" com .trim() para
+      remover espaços em branco antes e depois.
+      Também é aplicado um filtro para eliminar entradas vazias.
+      Depois disso, o código verifica se há pelo menos um nome válido na lista. Se não houver, uma mensagem de aviso é
+      exibida na tela, pedindo que o usuário insira pelo menos um nome.
+      Se a lista estiver correta, a função escolhe um nome aleatório usando Math.random() e Math.floor() para gerar um
+      índice válido dentro do array. Por fim, o nome sorteado é exibido no elemento com o ID "resultado".<br>
+      Data: 01/06
+    </p>
     <p>Digite os nomes separados por vírgula:</p>
-    <textarea id="entradaNomes" ></textarea>
+    <textarea id="entradaNomes"></textarea>
     <button onclick="sortearNome()">Sortear</button>
     <div id="resultado"></div>
   </div>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>

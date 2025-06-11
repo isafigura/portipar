@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Compras</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1>Lista de Compras</h1>
-    
-    <input type="text" id="item" placeholder="Digite um item">
-   <div>
+  <p>A função adicionarItem() permite inserir novos itens em uma lista na página. Ela começa lendo o texto
+    digitado pelo usuário e verifica se está vazio. Se estiver, exibe um alerta pedindo que o usuário digite algo.
+
+    Se o texto for válido, a função cria um novo elemento li, com um span contendo o texto do item e um botão com
+    ícone de lixeira (🗑️). Esse botão, ao ser clicado, remove o item da lista. Por fim, o item é adicionado à lista
+    na tela, o campo de entrada é limpo e o foco retorna para ele, facilitando a adição de novos itens. <br>
+    Data: 01/06.
+
+  </p>
+
+  <input type="text" id="item" placeholder="Digite um item">
+  <div>
     <button onclick="adicionarItem()">Adicionar</button>
-    </div>
-    <ul id="lista"></ul>
-    <script src="scripts.js"></script>
+  </div>
+  <ul id="lista"></ul>
+  <script src="scripts.js"></script>
 </body>
+
 </html>

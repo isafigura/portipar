@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -13,6 +14,8 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 10px;
+    text-align: right;
 }
 
 
@@ -25,10 +28,12 @@ main{
     height: 450px;
     border-radius: 20px;
     gap: 20px;
+    text-align: left;
 }
 
 .titulo{
     color: #C8102E;
+    margin-top: 15px;
 }
 
 .acesso > img {
@@ -48,4 +53,8 @@ main{
 .botaoAcessar:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); 
+}
+
+h2{
+    color: gray;
 }

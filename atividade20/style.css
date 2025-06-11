@@ -1,5 +1,7 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+ 
  * {
-     font-family: "Coral Pixels", serif;
+     font-family: 'Montserrat', sans-serif;
      font-weight: 400;
      font-style: normal;
      margin: 0;
@@ -7,12 +9,12 @@
  }
 
  body {
-     background-color: aquamarine;
+     background-color: #0d1b2a;
 
  }
 
  h2 {
-     font-size: 100px;
+     font-size: 90px;
      color: rgb(41, 41, 110);
  }
 
@@ -67,4 +69,9 @@
      cursor: pointer;
      border-radius: 5px;
      border: 1px solid #ccc;
+ }
+
+ .explicacao{
+    font-size: 15px;
+    text-align: justify;
  }

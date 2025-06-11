@@ -22,8 +22,7 @@ body.container {
 p {
     max-width: 600px;
     margin: 10px 0;
-    line-height: 1.6;
-    text-align: center;
+    text-align: justify;
 }
 
 input[type="number"] {
