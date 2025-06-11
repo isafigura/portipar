@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
+  background-color: #0d1b2a;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #ebe5e5;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #aabbcc;
 }
 
 #timer {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 700;
   margin-bottom: 30px;
-  color: #0c0c0c;
+  color: #57a0ff;
+  font-feature-settings: "tnum"; 
 }
 
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 button {
-  padding: 10px 20px;
+  background-color: #1b3a72;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 12px 25px;
   cursor: pointer;
- 
+  transition: background-color 0.3s ease;
 }
-
-#startBtn { background-color: #338b36; color: white; }
-#pauseBtn { background-color: #e79f3a; color: white; }
-#resetBtn { background-color: #cf3b36; color: white; }
 
 button:hover {
-  opacity: 0.9;
+  background-color: #3c5aa6;
 }
-

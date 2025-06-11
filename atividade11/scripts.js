@@ -4,7 +4,7 @@ function calcularNotas() {
     let valor = parseInt(valorInput.value);
 
     if (isNaN(valor) || valor < 2) {
-        resultadoDiv.innerHTML = "<p>Digite um valor vÃ¡lido (mÃ­nimo R$2).</p>";
+        resultadoDiv.innerHTML = "<p>Digite um valor válido (mínimo R$2).</p>";
         return;
     }
 
@@ -20,7 +20,7 @@ function calcularNotas() {
     });
 
     if (valor > 0) {
-        resultado += "<p><strong>NÃ£o Ã© possÃ­vel sacar moedas. Valor restante: R$" + valor + "</strong></p>";
+        resultado += "<p><strong>Não é possível sacar moedas. Valor restante: R$" + valor + "</strong></p>";
     }
 
     resultadoDiv.innerHTML = resultado;

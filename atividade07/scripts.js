@@ -2,8 +2,6 @@ const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let tentativas = 0;
 
 function verificarPalpite() {
- 
-
   const input = document.getElementById("palpite");
   const palpite = Number(input.value);
 
@@ -12,6 +10,7 @@ function verificarPalpite() {
     return;
   }
 
+  tentativas++; 
   const mensagem = document.getElementById("mensagem");
 
   if (palpite === numeroSecreto) {

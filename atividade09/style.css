@@ -1,32 +1,85 @@
+/* Importa a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
-    color: black;
-    background-color: #F0E68C;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    margin-top: 50px;
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    color: black;
-
-    
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
-ul {
- 
-padding: 10px;
-  border:  solid #999;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  font-size: 20px;
 
-  
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  background-color: #415a77;
+  color: #fff;
 }
 
 button {
-    border-radius: 10px;
-    background-color: #182903;
-    color: white;
-    margin: 10px;
-   
+  padding: 10px 20px;
+  background-color: #778da9;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a9bcd0;
+  color: #0d1b2a;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+li {
+  background-color: #1b263b;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.remover {
+  background: none;
+  border: none;
+  color: #e63946;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.remover:hover {
+  transform: scale(1.2);
 }

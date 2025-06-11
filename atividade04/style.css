@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to right, #03045e, #0077b6);
+    background: #0d1b2a;
     color: #ffffff;
     margin: 0;
     padding: 40px 20px;
@@ -24,6 +24,7 @@ p {
     text-align: center;
     line-height: 1.6;
     margin: 10px auto;
+    text-align: justify;
 }
 
 main {

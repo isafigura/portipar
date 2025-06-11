@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mostrar/Esconder Seções</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Controle de Visibilidade (toggle)</h2>
+  <p>Foi utilizado JavaScript para manipular as classes CSS das seções, ativando e desativando a classe .show com o método classList.toggle(). Cada botão possui um atributo data-target que indica qual seção será afetada.
+
+No CSS, as transições foram implementadas utilizando as propriedades transition combinadas com max-height e opacity, garantindo que o conteúdo apareça e desapareça de forma fluida. O uso de max-height com um valor fixo alto permite a animação da expansão e recolhimento do conteúdo e o opacity adiciona uma mudança visual mais agradável.
+
+Assim, o projeto une manipulação do DOM, eventos de clique e transições CSS. <br>
+Data: 11/06.
+</p>
+
+  <button data-target="section1">Alternar Seção 1</button>
+  <div id="section1" class="section">
+    <p>Esta é a primeira seção de conteúdo. Ela pode ser mostrada ou escondida com transição suave.</p>
+  </div>
+
+  <button data-target="section2">Alternar Seção 2</button>
+  <div id="section2" class="section">
+    <p>Esta é a segunda seção de conteúdo. Ideal para mostrar informações adicionais quando necessário.</p>
+  </div>
+
+  <button data-target="section3">Alternar Seção 3</button>
+  <div id="section3" class="section">
+    <p>Esta é a terceira seção. Transições suaves tornam a experiência mais agradável!</p>
+  </div>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>

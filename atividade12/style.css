@@ -1,34 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
 }
 
 .container {
-    background: #a8ddba;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #1b263b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .pergunta {
-    margin-bottom: 20px;
+  margin-bottom: 24px;
+  padding: 15px;
+  border-left: 4px solid #778da9;
+  background-color: #2e3b55;
+  border-radius: 8px;
+}
+
+.pergunta p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
 }
 
 button {
-    background-color: #1c8b36;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    display: block;
-    margin: 20px auto;
+  background-color: #778da9;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a9bcd0;
+  color: #0d1b2a;
 }
 
 #resultado {
-    text-align: center;
-    margin-top: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
 }
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Editor de texto</h1>
+    <h3>Insira o conteúdo que deseja editar no campo a seguir.</h3>
+    <div id="editor" contenteditable="true"></div>
+
+    <div>
+        <button onclick="formatar ('bold')">Negrito</button>
+        <button onclick="formatar ('italic')">Itálico</button>
+        <button onclick="formatar ('underline')">Sublinhado</button>
+        <button onclick="formatar('justifyCenter')">Centralizar</button>
+
+    </div>
+       <footer>
+       Editor de texto simples desenvolvido com HTML, CSS e JavaScript. Permite aplicar formatações
+    como negrito, itálico, sublinhado, centralização e listas. O objetivo é demonstrar conhecimentos
+    adquiridos em sala de aula, utilizando recursos como document.execCommand, uma função
+    do JavaScript que permite executar comandos de edição diretamente no conteúdo selecionado pelo usuário. Com ela, é possível modificar textos em áreas editáveis da página, simulando o comportamento de editores
+    como Word ou Google Docs.
+    </footer>
+
+    <script src="scripts.js"></script>
+
+ 
+</body>
+
+
+</html>

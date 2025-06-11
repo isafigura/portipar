@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Validador de Senha Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <h2>Validador de Senha Forte</h2>
+    <p>Foi criado um formulário simples para o usuário digitar uma senha. Ao enviar, o JavaScript utiliza expressões regulares (RegExp) para verificar se a senha atende aos critérios de segurança: mínimo de 8 caracteres, presença de letra maiúscula, letra minúscula, número e caractere especial. Cada critério é testado e, em seguida, uma lista de mensagens é exibida, indicando com símbolos visuais quais foram atendidos ou não. O DOM é manipulado para atualizar essas mensagens dinamicamente, proporcionando um feedback claro e imediato ao usuário.
+        Data: 11/06
+    </p>
+
+    <form id="passwordForm">
+        <label for="password">Digite sua senha:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Validar</button>
+    </form>
+
+    <ul id="messages">
+    </ul>
+
+    <script src="scripts.js"></script>
+    </main>
+</body>
+
+</html>

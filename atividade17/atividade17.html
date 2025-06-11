@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main>
+        <h1>Galeria de Imagens</h1>
+        <div class="botoes">
+
+            <button onclick="filtrarGaleria('natureza')">Natureza</button>
+            <button onclick="filtrarGaleria('tecnologia')">Tecnologia</button>
+            <button onclick="filtrarGaleria('pessoas')">Pessoas</button>
+            <button onclick="filtrarGaleria('comida')">Comida</button>
+            <button onclick="filtrarGaleria('animais')">Animais</button>
+            <button onclick="filtrarGaleria('todas')">Todas</button>
+
+        </div>
+
+
+        <div class="galeria">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/2e/f3/c4/the-foz-do-iguazu-city.jpg?w=2000&h=800&s=1"
+                class="imagem natureza">
+            <img src="https://www.viagenspossiveis.com.br/wp-content/uploads/2019/01/Buraco-do-Padre-Ponta-Grossa-PR-8-533x800.jpg" 
+            class="imagem natureza">
+            <img src="https://s4.static.brasilescola.uol.com.br/be/2020/03/computador-quantico-ibm.jpg"
+                class="imagem tecnologia">
+            <img src="https://s2-techtudo.glbimg.com/Hffm_RtVOK5sev85_r9ixg_FekU=/0x0:1920x1080/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/O/l/B4nTACQkS06rXPHFkBmA/gemini-vs-cahtgpt.png" 
+            class="imagem tecnologia">
+            <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/0747/production/_100636810_gettyimages-483838014.jpg.webp"
+                class="imagem pessoas">
+            <img src="https://img.freepik.com/fotos-premium/conjunto-de-retratos-de-pessoas-felizes-de-diferentes-idades-e-nacionalidades_116547-21899.jpg?w=2000" 
+            class="imagem pessoas">
+            <img src="https://www.academiaassai.com.br/sites/default/files/styles/noticia_1020x640/public/cardapio-vegano-cardapio-vegetariano-diferencas.jpg?itok=oUX7YOJ7"
+                class="imagem comida">
+            <img src="https://vidaveg.com.br/wp-content/themes/yootheme/cache/f6/vida-veg-receitas-veganas-f6c8eb0f.jpeg"
+             class="imagem comida">
+            <img src="https://jpimg.com.br/uploads/2025/03/7-animais-mais-fofos-do-mundo.jpg" 
+            class="imagem animais">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Arara_Azul_no_Pantanal.jpg/1280px-Arara_Azul_no_Pantanal.jpg" 
+            class="imagem animais">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Esta atividade foi resolvida utilizando HTML, CSS e JavaScript. As imagens foram organizadas com classes
+            conforme a categoria.
+            Os botões acionam funções JavaScript que usam `classList` para esconder ou mostrar apenas as imagens da
+            categoria selecionada.
+        </p>
+        <p><strong>Data da resolução:</strong> 30/05/2025</p>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
