@@ -1,5 +1,21 @@
-*{
-    color: white;
-    background-color: #0D1B2A;
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body.capa {
+    font-family: 'Montserrat', sans-serif;
+    background: #0d1b2a;
+    color: #caf0f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.capa h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }

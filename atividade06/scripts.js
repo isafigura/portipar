@@ -22,7 +22,6 @@ function adicionar() {
     li.remove();
   };
 
-  // Adiciona elementos
   li.appendChild(span);
   li.appendChild(botaoConcluir);
   li.appendChild(botaoRemover);
